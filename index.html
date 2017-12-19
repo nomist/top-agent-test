@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <title>Document</title>
+
+</head>
+<body>
+  <section class="results">
+    <div class="results__wrapper">
+      <h1 class="title">Tournament 101 - Final Results</h1>
+      <div class="navigation-bar">
+        <select class="filter">
+          <option value disabled selected>Choose something...</option>
+          <option value="rookie">Rookie</option>
+          <option value="amateur">Amateur</option>
+          <option value="pro">Pro</option>
+        </select>
+        <input class="results__search" id="search" type="search" placeholder="Search...">
+        <input class="results__search-btn" id="search-btn" type="submit" value="Search">
+      </div>
+      <table cellspacing="0">
+         <thead>
+         <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>Level</td>
+          <td>Score</td>
+         </tr>
+         </thead>
+         <tbody id="peoplelist">
+         </tbody>
+        </table>
+        <div class="pagination"></div>
+      </div>
+    </section>
+
+</body>
+  <script src="common.js"></script>
+</html>
